@@ -34,12 +34,26 @@ Podra acceder por medio de la siguiente URL
 http://localhost:3000/tareas
 
 
-Ejemplo de la cadena de conexion para mongo Atlas
+Ejemplo de la cadena de conexion para mongo Atlas en el archivo config.evn
 
 ATLAS_URI=mongodb+srv://backend:claveUsada123@sandbox.servidor.mongodb.net/ejemplo?retryWrites=true&w=majority
 
-En localhost esta es la cadena
+En localhost para una base local de mongodb esta es la cadena
 ATLAS_URI=mongodb://localhost:27017/ejemplo
+
+### Pruebras test
+Utilizamos estos plugis
+npm install mocha@10.7.3 chai@4.5.0 chai-http@4.4.0 --save-dev
+
+Instalamos el plugin  npm i --save-dev @types/mongodb
+
+en package json tiene que ir de esta manera en la parte del test
+"test": "mocha --exit",
+
+Version de nodeJs para que funcione
+v18.20.4
+
+
 
 
 #### Universidad de El Salvador

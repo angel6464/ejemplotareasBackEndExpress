@@ -85,7 +85,7 @@ recordRoutes.route('/listings/updateLike').post(function (req, res) {
       if (err) {
         res
           .status(400)
-          .send(`Error updating likes on listing with id ${listingQuery.id}!`);
+          .send(Error updating likes on listing with id ${listingQuery.id}!);
       } else {
         console.log('1 document updated');
       }
@@ -96,7 +96,6 @@ recordRoutes.route('/listings/updateLike').post(function (req, res) {
 // This section will help you delete a record.
 recordRoutes.route('/tareas/delete/:id').delete((req, res) => {
   var mongodb = require('mongodb');
-  var ObjectID = require('mongodb').ObjectID;
   var delete_id = req.params.id;//your id
   const dbConnect = dbo.getDb();
 
@@ -110,4 +109,4 @@ recordRoutes.route('/tareas/delete/:id').delete((req, res) => {
     });
 });
 
-module.exports = recordRoutes;
+module.exports = recordRoutes;
