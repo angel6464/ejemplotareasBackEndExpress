@@ -12,8 +12,6 @@ const dbo = require('../db/conn');
 
 recordRoutes.route('/').get(async function (_req, res) {
   res.status(200).send('Bienvenido al Backend!!' 
-  + "<br><h2>AL20034,Angel Aristides Alvarado Landaverde</h2>"
-  + "<br><h3>Ejemplo Docker</h3>"
   + "<br> Hostname = " + os.hostname()
   + "<br> OS = " + os.platform()
   + "<br> version = " + os.version()
