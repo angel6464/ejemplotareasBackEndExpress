@@ -1,4 +1,11 @@
 
+
+/**
+ * ANGEL ARISTIDES ALVARADO LANDAVERDE
+ * CARNET AL20034
+ * TEST OK
+ */
+
 process.env.NODE_ENV = 'test';
 const server = require('../server');
 const assert = require('chai').assert;
@@ -14,11 +21,6 @@ before(function (done) {
     });
 });
 
-
-//haremos una prueba haciendo una peticion a la ruta /
-//y verificando que el status sea 200
-//note que ahora se utiliza el parametro done
-// eslint-disable-next-line no-undef
 describe('02 prueba peticiones usaremos chai-http', () => {
 
     //primera prueba para verificar que raiz responda
@@ -32,7 +34,6 @@ describe('02 prueba peticiones usaremos chai-http', () => {
             });
     }
     );
-
 
     //segunda prueba insertamos una tarea
     //obtendremos el id de la tarea insertada para luego eliminarla
